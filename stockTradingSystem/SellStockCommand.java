@@ -14,7 +14,6 @@ public class SellStockCommand implements StockCommand {
 
     @Override
     public void execute() {
-        // Additional logic for executing the sell stock command
     }
 
 }
