@@ -4,6 +4,7 @@ import java.util.Date;
 
 public class Transaction {
 
+	private Date timestamp;
 	private User user;
 	private Stock stock;
 	private int quantity;
@@ -11,6 +12,7 @@ public class Transaction {
 	private Date date;
 	
 	public Transaction(User user, Stock stock, int quantity, double price) {
+		this.timestamp = new Date();
 		this.user = user;
 		this.stock = stock;
 		this.quantity = quantity;
@@ -37,4 +39,10 @@ public class Transaction {
 	public Date getDate() {
 		return date;
 	}
+
+	public Date getTimestamp() {
+		return timestamp;
+	}
+
+	
 }
